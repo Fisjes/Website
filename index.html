@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+<!-- Top section -->
+<div id="top-section">
+    <div class="container">
+        <h1>I'm <span class="auto-type"></span></h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+            strings: ['Designing', 'Studying', 'Coding', 'Benjamin'],
+            typeSpeed: 50,
+            startDelay: 0,
+            backSpeed: 50,
+            smartBackspace: true,
+            shuffle: false,
+            backDelay: 700,
+            fadeOut: false,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: false,
+            cursorChar: '|',
+            autoInsertCss: true,
+            contentType: 'html',
+            onBegin: (self) => {},
+            onComplete: (self) => {},
+            preStringTyped: (arrayPos, self) => {},
+            onStringTyped: (arrayPos, self) => {},
+            onLastStringBackspaced: (self) => {},
+            onTypingPaused: (arrayPos, self) => {},
+            onTypingResumed: (arrayPos, self) => {},
+            onReset: (self) => {},
+            onStop: (arrayPos, self) => {},
+            onStart: (arrayPos, self) => {},
+            onDestroy: (self) => {},
+        });
+    </script>
+    <section>
+        <div class="scrolldown">
+            <span></span>
+        </div>
+    </section>
+    <div class="header" data-aos="fade-up">
+        <h1>About <span>Me</span></h1>
+    </div>
+    <div class="info" data-aos="fade-up">
+        <div class="box">
+            <img class="image" src="1694108825532.jpg" alt="Your Image">
+        </div>
+        <div class="box">
+            <p>Hey! I'm Benjamin
+
+                I am a self-taught designer and animator, I have studied design and I am currently studying fullstack. I have 5+ years of professional experience working for youtubers
+                start-ups, and other individuals. Here is some of my stuff!
+            </p>
+        </div>
+    </div>
+</div>
+<!-- End top section -->
+
+<!-- Design section -->
+<div id="design-section">
+    <div class="my-designs">
+        <h1 class="header" data-aos="fade-up">My<span>&nbsp;Designs</span></h1>
+    </div>
+
+    <div class="image-container" data-aos="fade-up">
+        <div class="image-wrapper">
+            <img class="projects" src="Mockup_2.webp" alt="">
+        </div>
+        <div class="image-wrapper">
+            <img class="projects" src="SIA_BlackBG.webp" alt="">
+        </div>
+    </div>
+
+    <div class="image-container" data-aos="fade-up">
+        <div class="image-wrapper">
+            <img class="projects" src="Frame 1.webp" alt="">
+        </div>
+        <div class="image-wrapper">
+            <img class="projects" src="Frame 2.webp" alt="">
+        </div>
+    </div>
+
+    <div class="image-container" data-aos="fade-up">
+        <div class="image-wrapper">
+            <img class="projects" src="Frame 3.webp" alt="">
+        </div>
+        <div class="image-wrapper">
+            <img class="projects" src="gnarly-dude.svg" alt="">
+        </div>
+    </div>
+
+    <div class="image-container" data-aos="fade-up">
+        <div class="image-wrapper">
+            <img class="projects" src="poster-01-1.webp" alt="">
+        </div>
+    </div>
+<!-- End design section -->
+
+<!-- Posts Section -->
+<div id="posts-section">
+    <div class="my-posts">
+        <h1 class="header" data-aos="fade-up" style="margin-bottom: 30px;">My<span>&nbsp;Posts</span></h1>
+    </div>
+    
+    <div class="posts-container" data-aos="fade-up">
+        <a href="link-to-post-1" class="post-card">
+            <img src="pexels-213167965-17648437.jpg" alt="Post 1">
+            <h2>Unity Project</h2>
+            <p>Some playing around in my first unity project!</p>
+        </a>
+        <a href="link-to-post-2" class="post-card">
+            <img src="pexels-213167965-17648437.jpg" alt="Post 2">
+            <h2>Post Title 2</h2>
+            <p>Short description of the post content.</p>
+        </a>
+        <a href="link-to-post-3" class="post-card">
+            <img src="pexels-213167965-17648437.jpg" alt="Post 3">
+            <h2>Post Title 3</h2>
+            <p>Short description of the post content.</p>
+        </a>
+    </div>
+</div>
+
+<style>
+    #posts-section {
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .posts-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .post-card {
+        background: #fff;
+        color: #2b323c;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        text-decoration: none; /* Remove underline from links */
+        display: block; /* Ensure the link takes up the full card space */
+    }
+    
+    .post-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .post-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+</style>
+
+<!-- Footer -->
+<div class="footer-container">
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/leah-van-der-westen-68871a262/" target="_blank"><img src="iconmonstr-linkedin-3.svg" alt=""></a>
+            <a href="https://www.instagram.com/beeeaaaahhh/" target="_blank"><img src="iconmonstr-instagram-11.svg" alt=""></a>
+            <a href="mailto:leahvanderwesten@hotmail.com" target="_blank"><img src="iconmonstr-email-10.svg" alt=""></a>
+        </div>
+        <p>&copy; &nbsp;2023 Leah van der Westen. All rights reserved.</p>
+    </div>
+</div>
+<!-- End footer -->
+
+<!-- Cursors -->
+<div class="cursors">
+    <div></div>
+</div>
+<div class="nocursor"></div>
+<style type="text/css">
+    .nocursor { cursor:none; }
+</style>
+<script type="text/javascript">
+    document.body.style.cursor = 'none';
+</script>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+<script src="cursors.js"></script>
+</body>
+</html>
